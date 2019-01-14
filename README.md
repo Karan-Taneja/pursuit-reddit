@@ -21,9 +21,27 @@ Mon Jan 14 2019 17:37:05 GMT-0500 (Eastern Standard Time)
 
 ## Endpoints
 
-Do not actually implement these endpoints, just the routes and the authorization / middleware!
+**Implement this endpoint**
 
-* POST /user
-* GET /user/:id
-* PUT /user/:id
-* DELETE /user/:id
+Basically already implemented!
+
+* POST /login **PUBLIC**
+
+
+**Do not actually implement these endpoints, just the routes and the authorization / middleware!**
+
+## users 
+
+* POST /user **PUBLIC** (basically, sign up)
+* GET /user/:id **PUBLIC**
+* PUT /user/:id **PRIVATE** (only user who is signed in can update his/her data)
+* DELETE /user/:id **PRIVATE** (only user who is signed in can delete his/her data)
+
+## posts
+
+* POST /post **PRIVATE** 
+* GET /post/:id **PUBLIC**
+* PUT /post/:id **PRIVATE** 
+* DELETE /post/:id **PRIVATE** 
+
+
