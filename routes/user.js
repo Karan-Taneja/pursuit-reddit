@@ -1,4 +1,10 @@
+const bcrypt = require('bcrypt');
 const express = require('express');
+const uuidv1 = require('uuid/v1');
+
+const {checkForToken} = require('../middleware')
+const UserService = require("../services/user");
+
 const app = express.Router();
 
 // GET ALL USERS : ADMIN
